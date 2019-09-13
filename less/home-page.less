@@ -2,6 +2,15 @@
 
 .home {
 
+  margin-top: 100px;
+  
+    header {
+      img {
+        width: 100%;
+        border-radius: 5px;
+      }
+    }
+
   .intro {
 
     h2 {
@@ -10,7 +19,6 @@
 
     p {
       padding: 0 15px;
-      .centering();
     }
   
   }
@@ -18,19 +26,42 @@
   .space-images {
     display: flex;
     flex-wrap: wrap;
-    .centering();
+    width: 100%;
+
+    @media @phone {
+      flex-wrap: no-wrap;
+    }
+
+    .sky {
+      
+      @media @phone {
+        display: none;
+      }
+    }
+
+    .launch {
+      
+      @media @phone {
+        display: none;
+      }
+    }
+
 
     img {
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+      
+      @media @phone {
+        width:98%;
+      }
     }
+
   }
 
   .visit-planets {
     padding: 15px;
-    .centering();
 
     h3 {
       margin-top: 11px;
@@ -41,19 +72,29 @@
     }
   }
 
-  .line {
-    .centering();
+  .walk {
     margin-top: 60px;
     border-top: 1px solid @main-border-color;
-  }
-  .walk {
     padding: 50px 60px;
     display: flex;
     justify-content: center;
+    
+    @media @phone {
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+      padding: 10px 10px;
+    }
+    
 
     .walk-text {
       width: 50%;
-
+      
+      @media @phone {
+        width: 100%;
+      }
+      
       h3 {
         margin-bottom: 10px;
       }
@@ -63,21 +104,31 @@
       }
 
       .btn {
-      .button(white, black, 90px);
-      text-align: center;
-      padding-top: 6px;
-      
-      &:hover {
-        color: @river-bend;
-        background-color: @waterloo;
+        .button(white, @btn-bg-color, 100px);
+        text-align: center;
+        padding-top: 6px;
+        
+        &:hover {
+          color: @river-bend;
+          background-color: @waterloo;
+        }
+        
+        @media @phone {
+          .centering();
+          height: 70px;
+          font-weight: bold;
+        }
+        }
       }
-      }
-    }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
-      
+      @media @phone {
+        width: 100%;
+        padding: 15px 0;
+      }
+
       img {
         width: 100%;
         height: auto;
