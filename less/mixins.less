@@ -1,1 +1,14 @@
 // Mixins Here
+
+// Parametric Mixin
+.button(@color, @bg-color, @width) {
+    display: block;
+    font-size: 1.75rem;
+    color: @color;
+    background-color: @bg-color;
+    cursor: pointer;
+    height: 30px;
+    margin: 10px 20px 10px 0;
+    border-radius: 4px;
+    width: @width;
+}
