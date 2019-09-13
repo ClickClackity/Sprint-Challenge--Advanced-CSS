@@ -1,6 +1,14 @@
+.center-img {
+  width: 88%;
+  margin: 0 6%;
+}
+.centering {
+  width: 90%;
+  margin: 0 5%;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
+v2.0 | 20110126
+License: none (public domain)
 */
 html,
 body,
@@ -137,6 +145,10 @@ body {
   font-family: 'Ubuntu', sans-serif;
   color: #5E6164;
 }
+header {
+  border: 1px solid #F6F6F6;
+  color: #23293B;
+}
 h1,
 h2,
 h3,
@@ -160,11 +172,9 @@ p {
   width: 100%;
   margin: 0 auto;
 }
-header {
-  border: 1px solid #F1F1F1;
-  color: #23293B;
-}
 .title {
+  width: 90%;
+  margin: 0 5%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -173,6 +183,8 @@ header {
   margin-bottom: 10px;
 }
 .nav {
+  width: 90%;
+  margin: 0 5%;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -187,8 +199,13 @@ nav a {
   font-size: 1.65rem;
 }
 .main-header {
-  margin: 2px 0;
+  width: 88%;
+  margin: 0 6%;
   border-radius: 5px;
+}
+header h2 {
+  width: 90%;
+  margin: 0 5%;
 }
 footer {
   color: #22283B;
@@ -199,17 +216,22 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 90%;
+  margin: 0 5%;
 }
 .home .intro h2 {
   padding: 15px;
 }
 .home .intro p {
   padding: 0 15px;
+  width: 90%;
+  margin: 0 5%;
 }
 .home .space-images {
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
+  width: 90%;
+  margin: 0 5%;
 }
 .home .space-images img {
   width: 28%;
@@ -219,6 +241,8 @@ footer {
 }
 .home .visit-planets {
   padding: 15px;
+  width: 90%;
+  margin: 0 5%;
 }
 .home .visit-planets h3 {
   margin-top: 11px;
@@ -226,9 +250,13 @@ footer {
 .home .visit-planets p {
   margin-top: 13px;
 }
-.home .walk {
+.home .line {
+  width: 90%;
+  margin: 0 5%;
   margin-top: 60px;
   border-top: 1px solid #dee2e6;
+}
+.home .walk {
   padding: 50px 60px;
   display: flex;
   justify-content: center;
