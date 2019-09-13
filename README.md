@@ -32,15 +32,20 @@ Demonstrate your understanding of this week's concepts by answering the followin
 
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
-1. What is the difference between an adaptive website and a fully responsive website?
+1. What is the difference between an adaptive website and a fully responsive website?<br>
+A: Adapative websites relies on predefined screen sizes to adapt itself to resolutions across devices. Whereas a fully responsive website adapts to all screens across devices by using min or max screen sizes encompassing everything in between or up to.
 
-2. Describe what it means to be mobile first vs desktop first.
+2. Describe what it means to be mobile first vs desktop first.<br>
+A: mobile first sites will design based off and with a mobile screen size using min-width: and then scale it up for desktops. Whereas a desktop first site will design based off and with a desktop resolution in mind, using max-width: then scaling it down to fit across various mobile devices.
 
-3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
+3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?<br>
+A: It allows for uniform sizing across the board because when using 62.5% font-sizes in px are 10 times their rem value. So this allows for very quick math and sizing of fonts compared to em units which are always relative to the font size of their own element which can create problems when elements are nested and 100% which causes you to need to either guess or remember some odd numbers for basic font sizes such as 10px in 100% would be 0.625 rem, where as with 62.5% its just 10 times the px so 1 rem.
 
-4. How would you describe preprocessing to someone new to CSS?
+4. How would you describe preprocessing to someone new to CSS?<br>
+A: It is basically a language extension and a way to extend the ability and flexibility of CSS and makes it easier to use. It is more robust syntax and then that language is compiled into normal CSS allowing you to do more than just base css would allow you.
 
-5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?<br>
+A: Favorite would probably have to be parametric mixins as they give you a ton of flexibility while also saving you from having to rewrite a ton of code. The most trouble would probably be from escaping. The concept combined with media queries can create some tricky situations.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
